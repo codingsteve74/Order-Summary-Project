@@ -1,3 +1,87 @@
+/* HTML Css styling for core components */
 html {
     font-size: 16px;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 500;
 }
+
+body {
+    background-color: hsl(225, 100%, 94%);
+    max-width: 375px;
+    text-align: center;
+    margin-left: 60px;
+    margin-top: 50px;
+}
+
+footer {
+    visibility: hidden;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+p {
+    font-weight: 500;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+/* CSS styling code for the classes being used. */
+.main-container {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.upper-img img{
+    width: 100%; 
+    border-radius: 20px 20px 0 0;
+}
+
+.selection-box {
+    display: flex;
+}
+
+.selection-box > div { /* This class is the only one done differently, using the desendent of the class */
+    display: flex;
+    margin-left: 40px;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.img-icn{
+    width: 50px;
+}
+
+
+/* CSS styling for the Button controls */
+.cancel-button {
+    margin-bottom: 64px;
+}
+
+.go-button {
+    margin-top: 48px;
+    margin-bottom: 10px;
+}
+
+button {
+    width: 80%;
+    border-radius: 15px;
+    font-weight: 900;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: hsl(245, 75%, 52%);
+    color: hsl(225, 100%, 98%);
+}
+
+button:hover {
+    background-color: hsl(225, 100%, 94%);
+    color: black;
+}
+
+
+/* in the following code section is the CSS styling for the media querie(s) */
