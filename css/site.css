@@ -3,14 +3,17 @@ html {
     font-size: 16px;
     font-family: 'Red Hat Display', sans-serif;
     font-weight: 500;
+    background-image: url(../images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 930px;
 }
 
 body {
-    background-color: hsl(225, 100%, 94%);
     max-width: 375px;
     text-align: center;
     margin-left: 60px;
-    margin-top: 50px;
+    margin-top: 125px;
 }
 
 footer {
@@ -57,6 +60,10 @@ p {
     width: 50px;
 }
 
+.plan-info .text-format{
+    font-weight: 700;
+}
+
 
 /* CSS styling for the Button controls */
 .cancel-button {
@@ -85,3 +92,41 @@ button:hover {
 
 
 /* in the following code section is the CSS styling for the media querie(s) */
+@media screen and (min-width: 1000px) {
+    body {
+        max-width: 1440px;
+    }
+
+    html {
+        background-image: url(../images/pattern-background-desktop.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .main-container {
+        width: 400px;
+        margin-left: 45rem;
+    }   
+
+    .lower-info h1 {
+        padding-top: 3rem;
+    }
+
+    .lower-info p {
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-bottom: 2rem;
+        color: hsl(245, 75%, 52%);
+    }
+    .selection-box {
+        margin-left: 20px;
+    }
+
+    footer {
+        visibility: visible;
+        padding-top: 1rem;
+        text-align: center;
+        margin-left: 25rem;
+    }
+
+}
